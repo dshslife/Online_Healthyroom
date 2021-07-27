@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 보건실</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+</head>
+
+<body>
+    <div class="load"></div>
+
+    <div class="top" style="text-align: center;">
+        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" style="height: 70%; margin-top:10px">
+    </div>
+    <div style="text-align: center; height: 10vh;"></div>
+    <div class="mid shadow1">
+        <!--중간 이미지 -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90%28%EC%86%8C%EB%B0%A9%EA%B4%80%29_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_21.%EC%9D%91%EA%B8%89%EC%B2%98%EC%B9%98.JPG/1200px-2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90%28%EC%86%8C%EB%B0%A9%EA%B4%80%29_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_21.%EC%9D%91%EA%B8%89%EC%B2%98%EC%B9%98.JPG"
+            alt="">
+        <h1 class='ti-text' style="text-align: left;"><span class="f2 b2">온라인 보건실</span><br>3 응급처치</h1>
+    </div>
+    <div class="context f3 b1" style="position: relative;">
+        <p class="cin">
+            <b>응급처치</b>: 갑자기 발생한 외상이나 질환에 대해서 주로 발생한 장소, 또는 반송된 의료기관에서 최소한도의 치료를 행하는 것 <br /><br>
+        </p>
+        <img src="https://img8.yna.co.kr/etc/graphic/YH/2020/07/13/GYH2020071300040004400_P4.jpg"
+            class="cin-img"><br><br>
+        <br>
+        <hr>
+        <p class="cin">
+            <b>필요성</b><br>최근 10여 년간 사망 원인을 살펴보면 3대 사망 원인이 뇌혈관 질환, 암, 교통사고와 자살 등의 사고로 인한 사망이다. 이들 사망 원인 중 뇌혈관 질환과 각종 사고는
+            응급처치로 예후가 달라질 수 있어 응급처치의 중요성이 강조되고 있다. 심장정지는 초기 응급처치인 기본 심폐소생술과 전문가에 의한 전문 심장소생술을 실시하게 되면 43%의 생존율을 나타낼 수
+            있으나 10분만 늦어져도 거의 모두가 사망하게 됩니다. 따라서 일반인들에게 병원 전 응급처치에 대한 교육을 실시하여 주변에서 발생하는 심뇌혈관 환자들에 대한 응급처치의 접근성을 늘리면 전반적으로
+            사망률이 감소할 것입니다.
+            <br />
+        </p><br>
+        <hr>
+
+        <p class="cin">
+            <b>원칙</b><br>
+            1) 응급상황 파악한다.<br><br>2) 무엇을 할 것인지를 알아본다: 환자의 상태 파악 후 위급하다고 생각되면 119로 전화를 걸어 구급차를 요청한다. 이때 위급 여부가 잘 판단되지 않을
+            때에도 역시 119로 전화를 걸어 상담을 한다.<br><br>3) 구급차를 부른다: 일반 차량으로 환자를 병원으로 이송하는 경우 환자에게 위험을 초래할 수 있음으로 전문 구조요원인 119를
+            요청해야 한다.<br><br>4) 안전한 장소로 환자를 옮긴다: 환자와 구조자 모두 안전을 보장받을 수 있는 장소로 환자를 옮긴다.<br><br>5) 환자를 평가한다: 위급 상황여부를
+            판단한다.<br><br>6) 환자 응급처치를 실시한다: 가까운 사람이 응급조치를 취했을 경우 생존율에 있어 효과가 크므로 주의 사람의 즉각적인 응급조치가 필요하다.
+        </p><br>
+        <hr>
+        <p class="cin">
+            <b>관련자료</b><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099713&cid=51010&categoryId=51010">1. 심폐소생술</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099716&cid=51010&categoryId=51010">2. 기도 이물 폐쇄</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099712&cid=51010&categoryId=51010">3. 자동심장충격기</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099739&cid=51010&categoryId=51010">4. 손가락 절단</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099754&cid=51010&categoryId=51010&expCategoryId=51010">5.
+                두통</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099749&cid=51010&categoryId=51010&expCategoryId=51010">6.
+                감전</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099743&cid=51010&categoryId=51010">7. 열사병</a><br>
+            <a href="https://terms.naver.com/entry.naver?docId=2099744&cid=51010&categoryId=51010&expCategoryId=51010">8.
+                열화상</a>
+        </p>
+    </div><br><br>
+    <div class="bottom">
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>온라인 보건실</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div class="load"></div>
+
+    <div class="top" style="text-align: center;">
+        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" style="height: 70%; margin-top:10px">
+    </div>
+    <div style="text-align: center; height: 5vh;" class="space"></div>
+
+
+
+    <div class="quiz ani">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--여기 추가-->
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <br><br>
+        <div class="quiz-btn">
+            <button type="button" class="ox f4 ani" id="O" value="1">
+                <img src="{{url_for('static', filename='img/o.svg')}}" alt="O" height="40%">
+            </button>
+            <button type="button" class="ox f4 ani" style="margin-left:10px;" id="X" value="0">
+                <img src="{{url_for('static', filename='img/x.svg')}}" alt="X" height="40%">
+            </button>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="card ani shadow1 r1" id="l1">
+            <h1 class="num">1<h2>건강검진</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/heart.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l2">
+            <h1 class="num">2<h2>성교육</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/sex.svg')}}">
+        </div>
+
+        <div class="card ani shadow1 r1" id="l3">
+            <h1 class="num">3<h2>응급처치</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/firstaid.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l4">
+            <h1 class="num">4<h2>테이핑요법</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/tape.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l5">
+            <h1 class="num">5<h2>장애 인식 개선</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/disabled-sign.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l6">
+            <h1 class="num">6<h2>건강</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/hospital.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l7">
+            <h1 class="num">7<h2>병원 종류</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/hospital-build.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l8">
+            <h1 class="num">8<h2>헌혈</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/blood-drop.svg')}}">
+
+        </div>
+
+        <div class="card ani shadow1 r1" id="l9">
+            <h1 class="num">9<h2>흡현예방</h2>
+            </h1>
+            <div class="detail">
+                <h3 class="b4">보러가기 ></h3>
+            </div>
+            <img src="{{url_for('static', filename='img/no-smoking.svg')}}">
+
+        </div>
+    </div>
+    <div class="bottom">
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+<script src="{{url_for('static', filename='js/quiz.js')}}"></script>
+
+</html>

@@ -1,0 +1,342 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+  
+.card > h2 {
+  font-size:2vw;
+  z-index: 100;
+}
+  
+  .labels {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+  
+body {
+  background-color: rgb(250, 250, 250);
+  overflow-x: hidden;
+}
+  
+.num {
+  font-size: 100px;
+  margin-left: 20px;
+  color: white;
+}
+  
+.detail {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  right:20px;
+}
+  
+.ti-text {
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.load {
+  opacity: 1;
+  position: fixed;
+  z-index: 10000000;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.top {
+  line-height: 10vh;
+  transition: 0.5s;
+  top: 0px;
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+  height: 10vh;
+  position: fixed;
+  z-index: 1000;
+}
+  
+  
+  
+.ox {
+  margin-top: 20px;
+  background-color: rgb(240, 240, 240);
+  width: 100px;
+  height: 50px;
+  border: 0px;
+  cursor: pointer;
+}
+  
+.ox:hover{
+  filter: invert(0.9);
+}
+  
+  
+  
+.p-te {
+  margin-top: 5px;
+  width: 50vw;
+  word-break:break-all;
+  display: inline-block;
+  font-size: 1.5vw;
+}
+  
+.mid {
+  width: 0px;
+  opacity: 0;
+  height: 300px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.cin-img {
+  position: relative;
+  width: 100vw;
+  box-shadow: 0px 0px 80px -750px black;
+  transition: 0.3s;
+}
+
+.cin-img:hover {
+  box-shadow: 0px 0px 80px -70px black;
+
+}
+
+
+.cin {
+  margin-top: 40px;
+  width: 80%;
+  margin-left: 10%;
+  word-break:break-all;
+}
+
+.mid > img {
+  opacity: 0.6;
+  transition: 0.9s;
+}
+
+
+.mid > h1 {
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 10%;
+  font-size: 10vw;
+}
+
+.content {
+  display: grid;
+  width: 95%;
+  position: relative;
+  left: 50%;
+  margin-left: -47.5%;
+  margin-top: 40px;
+  place-items:center;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  color:white;
+  cursor: pointer;
+}
+  
+.quiz {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@media(min-width: 768px) {
+  .span {
+    margin-left: 130px;
+  }
+  .mid {
+    height: 500px;
+  }
+    .content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+      height: 400px;
+      width: 90%;
+    }
+    .quiz {
+      margin: 90px 100px;
+    }
+    .cin-img {
+      position: relative;
+      width: 50vw;
+      left: 50%;
+      margin-left: -25vw;
+    }
+    .mid > img {
+      width: 100vw;
+    }
+    .quiz-btn {
+      position: relative;
+      left: 130px;
+    }
+    .logo {
+      margin-left: -80%;
+    }
+}
+  
+@media(max-width:1024px) {
+  .logo {
+    margin-left: -40%;
+  }
+  .mid > img {
+    height: 100%;
+  }
+  .cin-img {
+    position: relative;
+    width: 100%;
+  }
+  .detail > h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .card > h2 {
+    z-index: 100;
+    font-size: 20px;
+  }
+
+  .card > img {
+    height: 30% !important;
+    right: 5px !important;
+    position: absolute;
+  }
+
+  .card > h1 {
+    margin-left: -150px;
+  }
+    .content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .quiz > h1 {
+      font-size: 12vw !important;
+    }
+    .p-te {
+      font-size: 15px;
+      width: 80vw;
+    }
+    .card {
+      height: 600px;
+      width: 95%;
+    }
+    .space {
+      height: 150px !important;
+    }
+
+    .card {
+      height: 300px !important;
+    }
+    .ox {
+      width: 30vw;
+      height: 50px;
+      margin: 20px 20px;
+    }
+    body {
+      text-align: center;
+    }
+}
+  
+.logo {
+  padding-top: 3px;
+  transition: 0.5s;
+  transform:translateY(-130px);
+  cursor: pointer;
+  max-height: 100px;
+}
+  
+
+.context {
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(30px);
+}
+  
+.card {
+    background-color: white;
+    margin-bottom: 40px;
+}
+  
+  
+  
+h1, h2, h3, h4, h5, h6 {display: inline-block;}
+  .ani {transition: 0.5s;}
+  .ce {text-align: center;}
+  .ri {text-align: right;}
+  .le {text-align: left;}
+  .b1 {font-weight: 100}
+  .b2 {font-weight: 200}
+  .b3 {font-weight: 300}
+  .b4 {font-weight: 400}
+  .b5 {font-weight: 500}
+  .b6 {font-weight: 600}
+  .b7 {font-weight: 700}
+  .b8 {font-weight: 800}
+  .b9 {font-weight: 900}
+  .f1 {font-size: 10px;}
+  .f2 {font-size: 15px;}
+  .f3 {font-size: 20px;}
+  .f4 {font-size: 25px;}
+  .f5 {font-size: 30px;}
+  .f6 {font-size: 35px;}
+  .f7 {font-size: 40px;}
+  
+.rf {
+    border-radius: 100%;
+}
+  
+.shadow {
+    box-shadow: 0px 0px 30px -40px black;
+}
+  
+.shadow1 {
+    box-shadow: 0px 0px 30px -20px black;
+}
+
+.card:hover {
+  transform: scale(0.9);
+}
+
+.card > img {
+  opacity: 0.3;
+  width: 50%;
+  height: 50%;
+  margin-top: 30%;
+  right: 60px;
+  position: absolute;
+}
+
+hr {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  margin-left: -35%;
+  border: 0px;
+  height: 1px;
+  margin-top: 8px;
+  border-radius: 20px;
+  background-color: rgb(230, 230, 230);
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  background-color: rgb(56, 219, 138);
+  color: white;
+}

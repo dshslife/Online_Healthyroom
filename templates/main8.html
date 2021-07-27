@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 보건실</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+</head>
+
+<body>
+    <div class="load"></div>
+
+    <div class="top" style="text-align: center;">
+        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" style="height: 70%; margin-top:10px">
+    </div>
+    <div style="text-align: center; height: 10vh;"></div>
+    <div class="mid shadow1">
+        <!--중간 이미지 -->
+        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/182FF/production/_107317099_blooddonor976.jpg">
+        <h1 class='ti-text' style="text-align: left;"><span class="f2 b2">온라인 보건실</span><br>8 헌혈</h1>
+    </div>
+    <div class="context f3 b1" style="position: relative;">
+        <p class="cin">
+            <b>헌혈의 필요성</b> <br>- 헌혈은 수혈이 필요한 환자의 생명을 구하는 유일한 수단입니다. 혈액은 아직 인공적으로 만들 수 있거나, 대체할 물질이 존재하지 않습니다.<br />
+            - 생명을 사고 팔 수 없다는 인류 공통의 윤리에 기반하여, 세계 각국은 혈액의 상업적 유통을 법으로 규제하고 있습니다.<br />
+            - 헌혈한 혈액은 장기간 보관이 불가능합니다.(농축적혈구 35일, 혈소판 5일) 따라서 적정 혈액보유량인 5일분을 유지하기 위해 헌혈자분들의 지속적이고 꾸준한 헌혈이 필요합니다.<br />
+            - 우리나라는 수혈용혈액의 경우 자급자족하고 있지만, 의약품의 원재료가 되는 혈장성분의 경우 외국으로부터 수입을 하고 있습니다.<br />
+            - 외국으로부터 수입하지 않고 혈액을 자급자족하기 위해서는 연간 약 300만명의 헌혈자가 헌혈에 참여해야 합니다.<br />
+            - 우리는 언제 수혈을 받을 상황에 처할지 모릅니다. 건강할 때 헌혈하는 것은 자신과 사랑하는 가족을 위하여, 더 나아가 모두를 위한 사랑의 실천입니다.
+        </p><br>
+        <hr>
+        <p class="cin">
+            <b>헌혈에 대한 오해와 진실</b><br>
+            -헌혈증서는 구매할 수 있다?<br>혈액관리법 제3조(혈액매매행위등의 금지)에 의해 매매가 금지되어 있습니다.<br /><br>
+            -헌혈을 하면 건강에 나쁘다?<br>우리 몸에 있는 혈액량은 남자의 경우 체중의 8%, 여자는 7% 정도이다. 예를 들어 체중이 60Kg인 남자의 몸 속에는 약 4,800mL의 혈액이 있고,
+            50Kg인 여자는 3,500mL 정도의 혈액을 가지고 있습니다. 전체 혈액량의 15%는 비상시를 대비해 여유로 가지고 있는 것으로, 헌혈 후 충분한 휴식을 취하면 건강에 아무런 지장을 주지
+            않습니다. 신체 내·외부의 변화에 대한 조절능력이 뛰어난 우리 몸은 헌혈 후 1~2일 정도면 일상생활에 지장이 없도록 혈관 내외의 혈액순환이 회복됩니다.<br /><br>
+            -헌혈과정에서 다른 질병에 감염될 수 있다?<br>헌혈과정은 매우 안전합니다. 헌혈에 사용되는 모든 기구(바늘, 혈액백 등)은 무균처리되어 있으며, 한번 사용 후에는 모두 폐기처분 하기 때문에
+            헌혈로 인해 에이즈등 다른질병에 감염될 위험은 전혀 없습니다.<br /><br>
+            -헌혈을 많이 하면 혈관이 좁아진다고 하는데?<br>혈관은 외부로부터 바늘이 들어오면 순간적으로 수축합니다. 그러나 곧 본래의 상태로 회복되므로, 헌혈의 횟수와 혈관수축과는 아무런 상관이
+            없습니다.
+        </p>
+    </div><br><br>
+    <div class="bottom">
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+
+</html>

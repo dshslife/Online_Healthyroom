@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온라인 보건실</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap">
+</head>
+
+<body>
+    <div class="load"></div>
+
+    <div class="top" style="text-align: center;">
+        <img class="logo" src="{{url_for('static', filename='img/logo.png')}}" style="height: 70%; margin-top:10px">
+    </div>
+    <div style="text-align: center; height: 10vh;"></div>
+    <div class="mid shadow1">
+        <!--중간 이미지 -->
+        <img
+            src="https://www.cnuh.co.kr/utl/web/imageSrc.do?path=kjFozpQkXHHOkLbq1F1MXw%3D%3D&physical=VFhSQUjqmx9COBIYpZm%2BlozmI4jsDKYpi9jHgq%2F32UOd7l3hB4n%2B408l9EghQOfA&contentType=Q06q6rtjXpOt%2FyLrsVzZBw%3D%3D">
+        <h1 class='ti-text' style="text-align: left;"><span class="f2 b2">온라인 보건실</span><br>7 병원 종류</h1>
+    </div>
+    <div class="context f3 b1" style="position: relative;">
+        <p class="cin">
+            <b>병원의 종류와 종류별로 주로 하는 일</b> <br>1)내과:몸속에 생긴 병을 치료하는 곳(감기,복통) <br>
+            2)외과:다친 환자를 꿰매고 수술을 합니다.<br />
+            3)이비인후과:목,귀,코가 아프면 치료해 줍니다.<br />
+            4)소아과 :평소에 우리가 다니는 병원으로 아기와 아이들의 병을 치료 합니다.<br />
+            5)비뇨기과:소변을 누는곳이 아프면 치료합니다.<br />
+            6)안과:눈이 아프면 치료 하는고 눈 수술를 하고 시력을 제어 주기도 합니다.<br />
+            7)정형외과:뼈가 부러 졌거나 다쳤을때 치료 합니다.<br />
+            8)치과:이가 아픈 사람을 치료합니다. 이의 병을 치료하는 곳으로, 이를 교정하거나 충치나 잇몸 치료를 합니다.
+        </p><br>
+        <hr><br>
+        <img src="{{url_for('static', filename='img/table.svg')}}" class="cin-img">
+
+    </div><br><br>
+    <div class="bottom">
+    </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="{{url_for('static', filename='js/animate.js')}}"></script>
+
+</html>

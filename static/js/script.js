@@ -1,7 +1,6 @@
 var rgb = [];
 for (var i = 0; i <= 8; i++) {
     rgb = [Math.random() * 1000 % 256, Math.random() * 1000 % 256, Math.random() * 1000 % 256];
-    console.log(rgb);
     $('.content').children()[i].style.backgroundColor = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
 }
 

@@ -1,17 +1,4 @@
-from flask import Flask, render_template, jsonify
-import random
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def main():
-    return render_template('index.html')
-
-
-@app.route('/api/quizs')
-def quizs():
-    quiz_list = [
+[
     {
         "quiz": "건강검진시 혈액 검사는 모두 다 한다.",
         "answer": 0
@@ -201,13 +188,3 @@ def quizs():
         "answer": 1
     }
 ]
-    return jsonify(random.sample(quiz_list, 10))
-
-
-@app.route('/t/<int:num>')
-def text(num):
-    return render_template('main%d.html' % num)
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')

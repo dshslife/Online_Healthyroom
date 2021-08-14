@@ -1,5 +1,5 @@
 var rgb = [];
-for (var i = 0; i <= 8; i++) {
+for (var i = 0; i <= 9; i++) {
     rgb = [Math.random() * 1000 % 256, Math.random() * 1000 % 256, Math.random() * 1000 % 256];
     $('.content').children()[i].style.backgroundColor = 'rgb(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ')';
 }
@@ -40,4 +40,8 @@ $('#l8').on('click', () => {
 
 $('#l9').on('click', () => {
     location.href='t/9';
+});
+
+$('#l10').on('click', () => {
+    location.href='t/10';
 });
